@@ -1,0 +1,14 @@
+<div class="body">
+
+		<div class="header">
+			  <div class = name>Гадкий<span>Утёнок</span>
+  </div>
+
+
+  		<div class="login">
+    				<input type="text" placeholder="логин" name="user"><br>
+				    <input type="password" placeholder="пароль" name="password"><br>
+				    <input type="button" value="Войти"><br>
+		  </div>
+</div>
+</div>

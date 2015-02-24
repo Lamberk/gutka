@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+  
+
+
+	background-image: url(http://maf.my/wp-content/uploads/2014/07/green-background-pictures-17225-17781-hd-wallpapers.jpg);
+	background-size: 90%;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+.header {
+  background-color:rgba(140,180,200,0.6);
+  blur: 5%;
+  left: 150px;
+  top: 90px;
+  height: 15%;
+  position: absolute;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.name {
+ display: inline-block;
+ vertical-align: 50px;
+ color: #fff;
+ font-family: 'Exo', sans-serif;
+ font-size: 35px;
+ font-weight: 200;
+}
+
+.login {
+  display: inline-block;
+}
+.name span{
+  
+	color: green;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	
+  margin-top: 10px;
+  width: 260px;
+	height: 40px;
+  
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	
+}
+
