@@ -1,0 +1,14 @@
+<div class="body">
+		<div class="header">
+			<div class = name>Komarov And Щербина <span>Design</span></div>
+
+
+	  		<div class="login">
+	  					<%= form_for :users, html: {class: "login"} do |f| %>
+		    				<%= f.text_field :name, :placeholder => 'Имя' %> <br />
+		    				<%= f.password_field :password, :placeholder => 'Пароль'  %> <br /><br />
+		  					<%= f.submit 'Войти' %> <br />
+		  				<% end %>
+			</div>
+		</div>
+</div>

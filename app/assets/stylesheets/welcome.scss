@@ -2,21 +2,18 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
 body{
-  
-
-
-	background-image: url(http://maf.my/wp-content/uploads/2014/07/green-background-pictures-17225-17781-hd-wallpapers.jpg);
-	background-size: 90%;
-	-webkit-filter: blur(5px);
+	background-image: url(17_2939.jpg);
+	/*background-image: url(green-background-pictures-17225-17781-hd-wallpapers.jpg);*/
+	background-size: 100%;
 	z-index: 0;
 }
 
 .header {
   background-color:rgba(140,180,200,0.6);
   blur: 5%;
-  left: 150px;
-  top: 90px;
-  height: 15%;
+  left: 20px;
+  top: 20px;
+  
   position: absolute;
   border: 3px solid #fff;
   border-radius: 6px;
@@ -37,7 +34,7 @@ body{
 }
 .name span{
   
-	color: green;
+	color: blue;
 }
 
 .login input[type=text]{
@@ -67,6 +64,23 @@ body{
 }
 
 .login input[type=button]{
+	
+  margin-top: 10px;
+  width: 260px;
+	height: 40px;
+  
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	
+}
+
+.login input[type=submit]{
 	
   margin-top: 10px;
   width: 260px;
