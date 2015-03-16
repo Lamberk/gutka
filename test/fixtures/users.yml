@@ -2,8 +2,16 @@
 
 one:
   name: MyString
+  username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  access: 1
+  date_last_visited: 1.5
+  bann: 1
 
 two:
   name: MyString
+  username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  access: 1
+  date_last_visited: 1.5
+  bann: 1
