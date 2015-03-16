@@ -5,7 +5,7 @@ one:
   username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
   access: 1
-  date_last_visited: 1.5
+  date_last_visited: 1
   bann: 1
 
 two:
@@ -13,5 +13,5 @@ two:
   username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
   access: 1
-  date_last_visited: 1.5
+  date_last_visited: 1
   bann: 1

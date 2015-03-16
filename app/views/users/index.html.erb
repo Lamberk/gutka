@@ -2,7 +2,6 @@
 		<div class="header">
 			<div class = name>Komarov And Щербина <span>Design</span></div>
 
-
 	  		<div class="login">
 	  					<%= form_for :users, html: {class: "login"} do |f| %>
 		    				<%= f.text_field :name, :placeholder => 'Имя' %> <br />
@@ -10,5 +9,6 @@
 		  					<%= f.submit 'Войти' %> <br />
 		  				<% end %>
 			</div>
+			<%= Time.strptime(@var_time.to_s, "%s").strftime("%d.%m.%Y") %>
 		</div>
 </div>
