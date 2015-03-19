@@ -1,10 +1,26 @@
 class UsersController < ApplicationController
 	def index
-		@users = User.new
 		@var_time = Time.now.to_time.to_i
 	end
 
+	def new
+		
+	end
+
 	def show
+		
+	end
+
+	def create
+		
+	end
+
+	def update
+		
+	end
+
+	def destroy
+		
 	end
 
 end

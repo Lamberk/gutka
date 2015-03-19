@@ -1,8 +1,4 @@
 # gutka
 Web-site
 
-Help these guys!
-
-Awesome build, enjoy!
-
-Its work so good!
+19.03 Сделал контроллеры Session and Admin для авторизации
