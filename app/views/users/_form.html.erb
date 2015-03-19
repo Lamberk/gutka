@@ -1,0 +1,26 @@
+<%= form_for @user, :html => {:style => 'width: 45%;'} do |f| %>
+	<fieldset>
+	<legend style="color: white;"><%= @caption %></legend>
+		<table cellpadding="5" cellspacing="0" align="left" border="0">
+			<tr>
+				<td style="color: white; width: 200px;">Login</td>
+				<td><%= f.text_field :username, :size => '40', :maxlength => '40', :required => 'required' %></td>
+			</tr>
+			<tr>
+				<td style="color: white;">Имя</td>
+				<td><%= f.text_field :name, :size => '40', :maxlength => '40', :required => 'required'%></td>
+			</tr>
+			<tr>
+				<td style="color: white;">Пароль</td>
+				<td><%= f.password_field :password, :size => '40', :maxlength => '40', :required => 'required'%></td>
+			</tr>
+			<tr>
+				<td style="color: white;">Подтверждение пароля</td>
+				<td><%= f.password_field :password_confirmation, :size => '40', :maxlength => '40', :required => 'required'%></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="color: white;"><%= f.submit 'Готово', :style => 'font-weight: bold; font-size: 14px; width: 80px; cursor: pointer;'%></td>
+			</tr>
+		</table>
+	</fieldset>
+<% end %>
