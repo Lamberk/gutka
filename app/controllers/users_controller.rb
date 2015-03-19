@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	def index
-		@var_time = Time.now.to_time.to_i
+		@var_date_now = Time.now.to_time.to_i
 	end
 
 	def new
@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		
+
 	end
 
 	def create
