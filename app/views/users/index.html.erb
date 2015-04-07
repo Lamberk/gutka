@@ -17,7 +17,7 @@
 			<td style="color: white;" align="center"><%= user.username %></td>
 			<td style="color: white;" align="center"><%= user.name %></td>
 			<td style="color: white;" align="center"><%= user.access %></td>
-			<td style="color: white;" align="center"><%= Time.strptime(user.date_last_visited.to_i.to_s, '%s').strftime("%d.%m.%Y в %H:%m") %></td>
+			<td style="color: white;" align="center"><%= Time.strptime(user.date_last_visited.to_i.to_s, '%s').strftime("%d.%m.%Y в %H:%M") %></td>
 			<td style="color: white;" align="center">
 				<%= link_to 'Изменть информацию', edit_user_path(user), :style => 'color: white; font-weight: bold;' %><br />
 				<%= link_to 'Удалить информацию', user, :style => 'color: white; font-weight: bold;', method: :delete, data: {confirm: 'Точно удалить?'} %>
