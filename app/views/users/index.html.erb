@@ -1,27 +1,29 @@
-<h1 style="color: white; text-align: center;">Пользователи &#8594;
-	<%= link_to 'выйти', 'logout', :style => 'color: red; font-weight: bold;' %>
-</h1>
-<%= link_to 'Добавить пользователя', new_user_path, :style => 'color: red; font-weight: bold;' %><br /><br />
-<table width="70%" cellpadding="0" cellspacing="0" align="left" border="1">
-	<tr>
-		<th style="color: white;">Bann</th>
-		<th style="color: white;">Login</th>
-		<th style="color: white;">Имя</th>
-		<th style="color: white;">Status</th>
-		<th style="color: white;">Последний вход</th>
-		<th style="color: white;">Действия</th>
-	</tr>
-	<% @users.each do |user| %>
+
+<%= render "admin/menu"%>
+<div style="float: left; display: block; width: 800px;">
+	<h2 style="color: white; text-align: center; margin: 0;">Пользователи</h2>
+	<%= link_to 'Добавить пользователя', new_user_path, :style => 'color: red; font-weight: bold;' %><br /><br />
+	<table width="100%" cellpadding="0" cellspacing="0" align="left" border="1">
 		<tr>
-			<td style="color: white;" align="center"><%= user.bann %></td>
-			<td style="color: white;" align="center"><%= user.username %></td>
-			<td style="color: white;" align="center"><%= user.name %></td>
-			<td style="color: white;" align="center"><%= user.access %></td>
-			<td style="color: white;" align="center"><%= Time.strptime(user.date_last_visited.to_i.to_s, '%s').strftime("%d.%m.%Y в %H:%M") %></td>
-			<td style="color: white;" align="center">
-				<%= link_to 'Изменть информацию', edit_user_path(user), :style => 'color: white; font-weight: bold;' %><br />
-				<%= link_to 'Удалить информацию', user, :style => 'color: white; font-weight: bold;', method: :delete, data: {confirm: 'Точно удалить?'} %>
-			</td>
+			<th style="color: white;">Bann</th>
+			<th style="color: white;">Login</th>
+			<th style="color: white;">Имя</th>
+			<th style="color: white;">Status</th>
+			<th style="color: white;">Последний вход</th>
+			<th style="color: white;">Действия</th>
 		</tr>
-	<% end %>
-</table>
+		<% @users.each do |user| %>
+			<tr>
+				<td style="color: white;" align="center"><%= user.bann %></td>
+				<td style="color: white;" align="center"><%= user.username %></td>
+				<td style="color: white;" align="center"><%= user.name %></td>
+				<td style="color: white;" align="center"><%= user.access %></td>
+				<td style="color: white;" align="center"><%= Time.strptime(user.date_last_visited.to_i.to_s, '%s').strftime("%d.%m.%Y в %H:%M") %></td>
+				<td style="color: white;" align="center">
+					<%= link_to 'Изменть информацию', edit_user_path(user), :style => 'color: white; font-weight: bold;' %><br />
+					<%= link_to 'Удалить информацию', user, :style => 'color: white; font-weight: bold;', method: :delete, data: {confirm: 'Точно удалить?'} %>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+</div>
