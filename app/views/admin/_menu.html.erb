@@ -1,22 +1,19 @@
-<div style="float: left; display: block; width: 370px; border: 1px solid black; margin-right: 10px;">
-	<table cellpadding="10" cellspacing="0" border="1" width="100%">
-		<tr>
-			<td style="background:#d1d1d1; text-align: center; font-size: 16px; font-weight: bold;">Меню</td>
-		</tr>
-		<tr>
-			<td style="background:#f5f5f5;"><%= link_to 'Пользователи', 'users', :style => 'color: blue; font-weight: bold;' %></td>
-		</tr>
-		<tr>
-			<td style="background:#f5f5f5;"><%= link_to 'Права доступа', '#', :style => 'color: blue; font-weight: bold;' %></td>
-		</tr>
-		<tr>
-			<td style="background:#f5f5f5;"><%= link_to 'Новости', '#', :style => 'color: blue; font-weight: bold;' %></td>
-		</tr>
-		<tr>
-			<td style="background:#f5f5f5;"><%= link_to 'Галерея', '#', :style => 'color: blue; font-weight: bold;' %></td>
-		</tr>
-		<tr>
-			<td style="background:white;"><%= link_to 'Выход!', 'logout', :style => 'color: red; font-weight: bold;' %></td>
-		</tr>
-	</table>
+<div style="float: left; display: inline; width: 210px; background:transparent; margin-right: 10px; border: 2px solid blue; border-radius: 8px;">
+	<center>
+		<div id="head_link">
+			<h4><%= link_to 'Пользователи', 'users' %></h4>
+		</div>
+		<div id="head_link">
+			<h4><%= link_to 'Права доступа', '#' %></h4>
+		</div>
+		<div id="head_link">
+			<h4><%= link_to 'Новости', '#' %></h4>
+		</div>
+		<div id="head_link">
+			<h4><%= link_to 'Галерея', '#' %></h4>
+		</div>
+		<div id="head_link">
+			<h4><%= link_to 'Выход!', 'logout', :style => 'color: red;' %></h4>
+		</div>
+	</center>
 </div>

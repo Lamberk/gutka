@@ -97,3 +97,24 @@ body{
 	
 }
 
+div#head_link a:link, div#head_link a:visited{
+	
+	text-decoration:none;
+	border: 1px solid black;
+	width: 160px;
+	padding: 5px;
+	display: block;
+	height: 15px;
+	color: rgb(33, 117, 155);
+	font-size: 16px; 
+	text-align: center;
+	background: #f5f5f5;
+	margin-bottom: -10px;
+}
+
+div#head_link a:hover{
+
+	background: white;
+
+}
+
