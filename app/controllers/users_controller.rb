@@ -16,8 +16,14 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-		if @user.save
-			redirect_to users_url
+		pass1 = params[:user][:password]
+		pass2 = params[:user][:password_confirmation]
+		if pass1 == pass2 
+			if @user.save
+				redirect_to users_url
+			else
+				render 'new'
+			end
 		else
 			render 'new'
 		end
@@ -33,7 +39,9 @@ class UsersController < ApplicationController
 	end
 
 	def destroy
-		
+		@user = User.find(params[:id])
+		@user.destroy
+		redirect_to users_url
 	end
 
 	private
